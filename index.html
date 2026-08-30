@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-t="pageTitle">Laufbursche IO HAWK Elite X 2.0</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
+<link rel="stylesheet" href="styles.css?v=3">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Laufbursche <span data-t="brandSub"></span></h1>
+    <div class="head-right">
+      <span></span>
+      <div class="head-tools">
+        <button type="button" class="theme-btn" id="btn-theme">&#9728;</button>
+        <div class="langs" id="langs" role="group">
+          <button type="button" data-lang="de" aria-pressed="true">DE</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Deutsch -->
+  <div class="card content" id="content-de">
+    <div class="doc-body">
+      <div class="warn">
+        <span class="warn-title">Rechtlicher und Sicherheitshinweis</span>
+        <ul>
+          <li>Dieser Trick hebt die Drossel auf. Damit erlischt die allgemeine Betriebserlaubnis (ABE). Ein so verändertes Fahrzeug darf auf öffentlichen Wegen nicht mehr betrieben werden.</li>
+          <li>Wer damit im öffentlichen Verkehr fährt, begeht mit hoher Wahrscheinlichkeit Straftaten: Fahren ohne die nötige Fahrerlaubnis sowie einen Verstoß gegen das Pflichtversicherungsgesetz, weil der Versicherungsschutz entfällt. Beides ist strafbar.</li>
+          <li>Der Trick wird während der Fahrt durchgeführt und verlangt ein Hantieren am Bedienteil bei hoher Geschwindigkeit. Das ist nichts für ungeübte Fahrer und birgt ein erhebliches Sturz- und Unfallrisiko.</li>
+          <li>Der Autor dieses Dokuments veröffentlicht die Beschreibung allein zu Forschungs- und Dokumentationszwecken. Es wird keinerlei Haftung für Schäden, Bußgelder, Strafen oder Folgen jeder Art übernommen. Eine fehlerfreie Funktion wird nicht zugesichert. Die Nutzung erfolgt vollständig auf eigenes Risiko und nur am eigenen Gerät auf privatem, abgesperrtem Gelände.</li>
+        </ul>
+      </div>
+
+      <h2>Hinweis zu neueren Batches</h2>
+      <p>Bei später produzierten 2.0-Chargen greift der Trick nicht mehr. Klappt er bei dir nicht, hast du mit hoher Wahrscheinlichkeit ein neueres Display verbaut.</p>
+
+      <h2>Worum es geht</h2>
+      <p>Über einen Fehler in der Modus-Steuerung lässt sich der Elite X 2.0 kurzzeitig schneller bewegen als die eingestellten 22 km/h. Angestoßen wird das allein durch eine bestimmte Reihenfolge an den +/- Tasten des Bedienteils, ohne Umbau und ohne neue Firmware. Der Ablauf besteht aus zwei Teilen: erst den Schub auslösen, danach diesen Zustand festhalten.</p>
+
+      <h2>Teil 1: Schub auslösen</h2>
+      <ol>
+        <li>Im Modus 3 mit Vollgas rollen, also die geregelten 22 km/h.</li>
+        <li>Den Gasgriff komplett loslassen.</li>
+        <li>Zwei Mal Minus tippen, dadurch wechselt der Scooter in Modus 1.</li>
+        <li>Sofort wieder voll aufziehen und das Gas gedrückt halten.</li>
+        <li>Zwei Mal Plus tippen, um zurück in Modus 3 zu gelangen.</li>
+      </ol>
+      <p>Jetzt schiebt der Elite X kurz über die 22-km/h-Marke, allerdings höchstens rund zehn Sekunden. Wiederholt man die Abfolge, klettert die Geschwindigkeit im Dualmodus weiter, auf 50 km/h und darüber.</p>
+
+      <h2>Teil 2: Zustand festhalten</h2>
+      <ol>
+        <li>Den Schub weiterlaufen lassen und das Gas dabei halten.</li>
+        <li>Einmal Minus und einmal Plus tippen.</li>
+      </ol>
+      <p>Dadurch verwirft der Controller seinen internen Zehn-Sekunden-Zähler. Von da an bestimmst du das Tempo direkt über den Gasgriff.</p>
+
+      <h2>Verhalten</h2>
+      <ul>
+        <li>Sobald du den Gasgriff einmal ganz loslässt oder bremst, fällt der Controller auf die zugelassenen Werte zurück.</li>
+        <li>Es bleibt nichts dauerhaft gespeichert.</li>
+        <li>Beim Festhalten kann die Geschwindigkeit an einer festen Obergrenze hängen bleiben, zum Beispiel bei etwa 30 km/h. Vermutlich entscheidet der genaue Zeitpunkt der +/- Eingaben, in welche Stufe man einrastet.</li>
+        <li>Der Ablauf ist noch nicht abschließend untersucht. Möglicherweise gibt es weitere oder bequemere Varianten, den Schub anzustoßen.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- English -->
+  <div class="card content" id="content-en" hidden>
+    <div class="doc-body">
+      <div class="warn">
+        <span class="warn-title">Legal and safety notice</span>
+        <ul>
+          <li>This trick removes the throttle limit. With it the general road approval (ABE) becomes void. A vehicle changed this way must no longer be operated on public roads.</li>
+          <li>Riding it in public traffic very likely constitutes criminal offences: driving without the required licence and a breach of the compulsory insurance act, because the insurance cover lapses. Both are punishable.</li>
+          <li>The trick is performed while riding and requires operating the control panel at high speed. It is not for inexperienced riders and carries a serious risk of falling and crashing.</li>
+          <li>The author of this document publishes the description solely for research and documentation purposes. No liability is accepted for damages, fines, penalties or consequences of any kind. Error-free operation is not guaranteed. Use is entirely at your own risk and only on your own vehicle on private, closed-off ground.</li>
+        </ul>
+      </div>
+
+      <h2>Note on newer batches</h2>
+      <p>On later produced 2.0 batches the trick no longer works. If it does not work for you, you most likely have a newer display fitted.</p>
+
+      <h2>What this is about</h2>
+      <p>A flaw in the mode handling lets the Elite X 2.0 run faster than the set 22 km/h for a short while. It is set off purely by a certain order on the +/- buttons of the control panel, with no modification and no new firmware. The procedure has two parts: first set off the surge, then lock that state in.</p>
+
+      <h2>Part 1: Set off the surge</h2>
+      <ol>
+        <li>Cruise in mode 3 at full throttle, the regulated 22 km/h.</li>
+        <li>Let go of the throttle completely.</li>
+        <li>Tap minus twice, which drops the scooter into mode 1.</li>
+        <li>Immediately pull full throttle again and keep it held.</li>
+        <li>Tap plus twice to get back to mode 3.</li>
+      </ol>
+      <p>The Elite X now pushes past the 22 km/h mark for a moment, but for around ten seconds at most. Repeat the sequence and the speed keeps climbing in dual mode, to 50 km/h and beyond.</p>
+
+      <h2>Part 2: Lock the state in</h2>
+      <ol>
+        <li>Let the surge keep running and hold the throttle.</li>
+        <li>Tap minus once and plus once.</li>
+      </ol>
+      <p>This makes the controller drop its internal ten second counter. From then on you set the pace directly with the throttle.</p>
+
+      <h2>Behaviour</h2>
+      <ul>
+        <li>The moment you fully release the throttle once or brake, the controller falls back to the approved values.</li>
+        <li>Nothing stays stored permanently.</li>
+        <li>While holding the state, the speed can stick at a fixed cap, for instance around 30 km/h. The exact timing of the +/- inputs probably decides which step you lock into.</li>
+        <li>The procedure is not yet fully investigated. There may be further or more convenient ways to set off the surge.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2 data-t="dlTitle"></h2>
+    <p class="hint" data-t="dlHint"></p>
+    <div class="btns">
+      <a class="dl span2" id="dl-pdf" href="IOHawk_Elite_X2_Boost_Trick.pdf" download data-t="dlBtn"></a>
+    </div>
+  </div>
+
+  <footer class="foot">
+    <span class="foot-links">
+      <a href="https://github.com/Laufbursche42/iohawk-elite-x2-unlock" target="_blank" rel="noopener" data-t="footSource"></a>
+    </span>
+    <span class="ver" id="build-ver"></span>
+  </footer>
+</div>
+
+<script src="i18n.js?v=3"></script>
+<script src="app.js?v=3"></script>
+</body>
+</html>
