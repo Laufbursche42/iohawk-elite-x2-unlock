@@ -182,5 +182,10 @@ a.dl:hover { text-decoration: none; filter: brightness(1.05); }
 .content .doc-body ol, .content .doc-body ul { padding-left: 20px; }
 /* Warnhinweis als formatierte Liste statt Fliesstext. */
 .warn .warn-title { display: block; margin-bottom: 6px; color: var(--warn-strong); font-weight: 700; }
+/* Deprecation banner: red tone, always visible, cannot be dismissed. */
+.sunset-banner { background: var(--bad-bg); border: 1px solid var(--bad-line); border-radius: 10px;
+  padding: 11px 14px; font-size: 12px; line-height: 1.5; color: var(--text); }
+.sunset-banner b { color: var(--bad-strong); }
+.sunset-banner a { color: var(--bad-strong); text-decoration: underline; }
 .warn ul { margin: 0; padding-left: 18px; }
 .warn li { margin: 5px 0; }

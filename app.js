@@ -16,6 +16,9 @@ function applyLang() {
   const de = $('content-de'), en = $('content-en');
   if (de) de.hidden = (lang !== 'de');
   if (en) en.hidden = (lang !== 'en');
+  const sd = $('sunset-de'), se = $('sunset-en');   // language-matched deprecation banner
+  if (sd) sd.hidden = (lang !== 'de');
+  if (se) se.hidden = (lang !== 'en');
   document.querySelectorAll('#langs button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
   { const el = $('langs'); if (el) el.setAttribute('aria-label', t('langGroup')); }
   { const dark = document.documentElement.getAttribute('data-theme') !== 'light'; const b = $('btn-theme');
