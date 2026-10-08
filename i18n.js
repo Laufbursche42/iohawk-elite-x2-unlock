@@ -14,6 +14,7 @@ window.I18N = {
     dlBtn: "PDF herunterladen",
     footPdf: "PDF",
     footSource: "Quellcode",
+    footIssue: "Fehler melden",
     buildLabel: "Stand"
   },
   en: {
@@ -27,6 +28,7 @@ window.I18N = {
     dlBtn: "Download PDF",
     footPdf: "PDF",
     footSource: "Source",
+    footIssue: "Report an issue",
     buildLabel: "build"
   }
 };
