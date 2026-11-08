@@ -70,7 +70,7 @@ function mdToHtml(md) {
   return out.join('\n');
 }
 
-const BUILD = 'v1';
+const BUILD = 'v2';
 const $ = (id) => document.getElementById(id);
 let lang = 'de';
 
