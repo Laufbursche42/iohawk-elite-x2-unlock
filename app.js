@@ -86,6 +86,12 @@ function applyLang() {
   const sd = $('sunset-de'), se = $('sunset-en');   // language-matched deprecation banner
   if (sd) sd.hidden = (lang !== 'de');
   if (se) se.hidden = (lang !== 'en');
+  const od = $('sunset-ov-de'), oe = $('sunset-ov-en');   // language-matched gate overlay
+  if (od) od.hidden = (lang !== 'de');
+  if (oe) oe.hidden = (lang !== 'en');
+  const obd = $('sunset-ov-btn-de'), obe = $('sunset-ov-btn-en');
+  if (obd) obd.hidden = (lang !== 'de');
+  if (obe) obe.hidden = (lang !== 'en');
   document.querySelectorAll('#langs button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
   { const el = $('langs'); if (el) el.setAttribute('aria-label', t('langGroup')); }
   { const dark = document.documentElement.getAttribute('data-theme') !== 'light'; const b = $('btn-theme');
@@ -119,3 +125,22 @@ window.addEventListener('DOMContentLoaded', () => {
   initLang();
   applyLang();
 });
+
+/* Deprecation gate overlay: lock the page until the user dismisses it. Self-contained. */
+(function () {
+  function wireSunsetGate() {
+    var ov = document.getElementById('sunset-overlay');
+    var btn = document.getElementById('sunset-overlay-x');
+    if (!ov || !btn) return;
+    document.body.classList.add('sunset-locked');
+    btn.addEventListener('click', function () {
+      ov.hidden = true;
+      document.body.classList.remove('sunset-locked');
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', wireSunsetGate);
+  } else {
+    wireSunsetGate();
+  }
+})();

@@ -8,7 +8,7 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
-<link rel="stylesheet" href="styles.css?v=7">
+<link rel="stylesheet" href="styles.css?v=8">
 <!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "1f2a3915448b4b68b4380423f2be4b09"}'></script><!-- scan-ok: Cloudflare Web Analytics beacon (token starts 1f2a39 ends 4b09); cookieless aggregate page metrics, see PRIVACY -->
 </head>
 <body>
@@ -26,6 +26,20 @@
       </div>
     </div>
   </header>
+
+  <div class="sunset-overlay" id="sunset-overlay" role="dialog" aria-modal="true">
+    <div class="sunset-box">
+      <div id="sunset-ov-de">
+        <h2 class="sunset-title">Dieses Tool zieht um</h2>
+        <div class="sunset-text"><b>Dieses Tool zieht um.</b> Dieses Repo wird <b>nicht mehr weiterentwickelt</b> - bitte wechsle zum neuen Tool: <a href="https://lb-tool-web.pages.dev/" target="_blank" rel="noopener">lb-tool-web.pages.dev</a>. Probleme beim Wechsel? Öffne ein <a href="https://github.com/Laufbursche42/Laufbursche42/issues/new" target="_blank" rel="noopener">Issue auf GitHub</a> oder schick eine <a href="https://www.escooter-stammtisch.de/index.php?user/6497-laufbursche/" target="_blank" rel="noopener">PN im eScooter-Stammtisch</a>.</div>
+      </div>
+      <div id="sunset-ov-en" hidden>
+        <h2 class="sunset-title">This tool is moving</h2>
+        <div class="sunset-text"><b>This tool is moving.</b> This repository is <b>no longer maintained</b> - please switch to the new tool: <a href="https://lb-tool-web.pages.dev/" target="_blank" rel="noopener">lb-tool-web.pages.dev</a>. Trouble switching? Open an <a href="https://github.com/Laufbursche42/Laufbursche42/issues/new" target="_blank" rel="noopener">issue on GitHub</a> or send a <a href="https://www.escooter-stammtisch.de/index.php?user/6497-laufbursche/" target="_blank" rel="noopener">PM on the eScooter-Stammtisch forum</a>.</div>
+      </div>
+      <button type="button" class="sunset-dismiss" id="sunset-overlay-x"><span id="sunset-ov-btn-de">Verstanden, weiter zur Seite</span><span id="sunset-ov-btn-en" hidden>Got it, continue to the page</span></button>
+    </div>
+  </div>
 
   <div class="sunset-banner" id="sunset-de" role="alert"><b>Dieses Tool zieht um.</b> Dieses Repo wird <b>nicht mehr weiterentwickelt</b> - bitte wechsle zum neuen Tool: <a href="https://lb-tool-web.pages.dev/" target="_blank" rel="noopener">lb-tool-web.pages.dev</a>. Probleme beim Wechsel? Öffne ein <a href="https://github.com/Laufbursche42/Laufbursche42/issues/new" target="_blank" rel="noopener">Issue auf GitHub</a> oder schick eine <a href="https://www.escooter-stammtisch.de/index.php?user/6497-laufbursche/" target="_blank" rel="noopener">PN im eScooter-Stammtisch</a>.</div>
   <div class="sunset-banner" id="sunset-en" role="alert" hidden><b>This tool is moving.</b> This repository is <b>no longer maintained</b> - please switch to the new tool: <a href="https://lb-tool-web.pages.dev/" target="_blank" rel="noopener">lb-tool-web.pages.dev</a>. Trouble switching? Open an <a href="https://github.com/Laufbursche42/Laufbursche42/issues/new" target="_blank" rel="noopener">issue on GitHub</a> or send a <a href="https://www.escooter-stammtisch.de/index.php?user/6497-laufbursche/" target="_blank" rel="noopener">PM on the eScooter-Stammtisch forum</a>.</div>
@@ -139,8 +153,8 @@
   </footer>
 </div>
 
-<script src="report-footer.js?v=1"></script>
-<script src="i18n.js?v=4"></script>
-<script src="app.js?v=4"></script>
+<script src="report-footer.js?v=2"></script>
+<script src="i18n.js?v=5"></script>
+<script src="app.js?v=5"></script>
 </body>
 </html>
